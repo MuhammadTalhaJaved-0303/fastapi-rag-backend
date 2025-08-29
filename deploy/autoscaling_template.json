@@ -1,0 +1,100 @@
+{
+  "LaunchTemplate": {
+    "LaunchTemplateName": "rag-app-launch-template",
+    "LaunchTemplateData": {
+      "ImageId": "ami-0c02fb55956c7d316",
+      "InstanceType": "t3.medium",
+      "KeyName": "rag-app-key",
+      "SecurityGroupIds": ["sg-xxxxxxxxx"],
+      "IamInstanceProfile": {
+        "Name": "EC2-ECS-Role"
+      },
+      "BlockDeviceMappings": [
+        {
+          "DeviceName": "/dev/xvda",
+          "Ebs": {
+            "VolumeSize": 20,
+            "VolumeType": "gp3",
+            "DeleteOnTermination": true
+          }
+        }
+      ],
+      "UserData": "BASE64_ENCODED_USER_DATA_SCRIPT",
+      "TagSpecifications": [
+        {
+          "ResourceType": "instance",
+          "Tags": [
+            {
+              "Key": "Name",
+              "Value": "RAG-App-Instance"
+            },
+            {
+              "Key": "Project",
+              "Value": "RAG-Application"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "AutoScalingGroup": {
+    "AutoScalingGroupName": "rag-app-asg",
+    "LaunchTemplate": {
+      "LaunchTemplateName": "rag-app-launch-template",
+      "Version": "$Latest"
+    },
+    "MinSize": 1,
+    "MaxSize": 10,
+    "DesiredCapacity": 2,
+    "VPCZoneIdentifier": ["subnet-xxxxxxxxx", "subnet-yyyyyyyyy"],
+    "HealthCheckType": "ELB",
+    "HealthCheckGracePeriod": 300,
+    "DefaultCooldown": 300,
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "RAG-App-ASG",
+        "PropagateAtLaunch": true
+      }
+    ]
+  },
+  "ScalingPolicies": [
+    {
+      "PolicyName": "rag-app-scale-up",
+      "PolicyType": "TargetTrackingScaling",
+      "TargetTrackingConfiguration": {
+        "TargetValue": 70.0,
+        "PredefinedMetricSpecification": {
+          "PredefinedMetricType": "ASGAverageCPUUtilization"
+        },
+        "ScaleOutCooldown": 300,
+        "ScaleInCooldown": 300
+      }
+    }
+  ],
+  "LoadBalancer": {
+    "LoadBalancerName": "rag-app-alb",
+    "Type": "application",
+    "Scheme": "internet-facing",
+    "SecurityGroups": ["sg-xxxxxxxxx"],
+    "Subnets": ["subnet-xxxxxxxxx", "subnet-yyyyyyyyy"],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "RAG-App-LoadBalancer"
+      }
+    ]
+  },
+  "TargetGroup": {
+    "Name": "rag-app-targets",
+    "Protocol": "HTTP",
+    "Port": 8000,
+    "VpcId": "vpc-xxxxxxxxx",
+    "HealthCheckProtocol": "HTTP",
+    "HealthCheckPath": "/docs",
+    "HealthCheckIntervalSeconds": 30,
+    "HealthyThresholdCount": 2,
+    "UnhealthyThresholdCount": 3,
+    "TargetType": "instance"
+  }
+}

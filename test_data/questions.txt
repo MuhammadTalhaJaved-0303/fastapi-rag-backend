@@ -1,0 +1,502 @@
+What is the capital of France?
+What is the formula for water?
+Who wrote Hamlet?
+What is the speed of light?
+What is the largest planet in our solar system?
+What is the smallest country in the world?
+Who painted the Mona Lisa?
+What is the currency of Japan?
+What is the main ingredient in guacamole?
+Who is the current president of the United States?
+What is the chemical symbol for gold?
+What is the tallest mountain in the world?
+What is the most populous country in the world?
+Who invented the telephone?
+What is the largest ocean in the world?
+What is the name of the galaxy we live in?
+What is the square root of 64?
+What is the chemical formula for salt?
+Who was the first person to walk on the moon?
+What is the capital of Australia?
+What is the hardest natural substance on Earth?
+What is the main component of the sun?
+What is the largest desert in the world?
+Who wrote the book 'To Kill a Mockingbird'?
+What is the capital of Canada?
+What is the most spoken language in the world?
+What is the chemical symbol for silver?
+What is the largest animal in the world?
+What is the name of the longest river in the world?
+Who discovered penicillin?
+What is the capital of Brazil?
+What is the main ingredient in bread?
+What is the chemical formula for carbon dioxide?
+Who was the first president of the United States?
+What is the capital of Russia?
+What is the most common blood type?
+What is the chemical symbol for iron?
+What is the largest continent in the world?
+Who wrote the book '1984'?
+What is the capital of China?
+What is the most abundant gas in the Earth's atmosphere?
+What is the chemical formula for methane?
+Who was the first woman to fly solo across the Atlantic Ocean?
+What is the capital of India?
+What is the smallest planet in our solar system?
+What is the chemical symbol for helium?
+What is the largest island in the world?
+Who wrote the book 'The Great Gatsby'?
+What is the capital of Egypt?
+What is the most common element in the universe?
+What is the chemical formula for ammonia?
+Who was the first person to circumnavigate the globe?
+What is the capital of Mexico?
+What is the largest living organism?
+What is the chemical symbol for sodium?
+What is the largest country in the world by area?
+Who wrote the book 'Pride and Prejudice'?
+What is the capital of Spain?
+What is the most common metal in the Earth's crust?
+What is the chemical formula for sulfuric acid?
+Who was the first person to reach the South Pole?
+What is the capital of Italy?
+What is the largest moon in our solar system?
+What is the chemical symbol for potassium?
+What is the largest active volcano in the world?
+Who wrote the book 'The Catcher in the Rye'?
+What is the capital of Germany?
+What is the most common mineral in the Earth's crust?
+What is the chemical formula for nitric acid?
+Who was the first person to reach the North Pole?
+What is the capital of the United Kingdom?
+What is the largest lake in the world?
+What is the chemical symbol for calcium?
+What is the largest coral reef in the world?
+Who wrote the book 'Moby Dick'?
+What is the capital of Argentina?
+What is the most common type of rock on Earth?
+What is the chemical formula for hydrochloric acid?
+Who was the first person to climb Mount Everest?
+What is the capital of South Africa?
+What is the largest waterfall in the world?
+What is the chemical symbol for magnesium?
+What is the largest cave in the world?
+Who wrote the book 'The Hobbit'?
+What is the capital of Turkey?
+What is the most common type of tree in the world?
+What is the chemical formula for phosphoric acid?
+Who was the first person to invent the light bulb?
+What is the capital of Greece?
+What is the largest glacier in the world?
+What is the chemical symbol for aluminum?
+What is the largest canyon in the world?
+Who wrote the book 'The Lord of the Rings'?
+What is the capital of Sweden?
+What is the most common type of flower in the world?
+What is the chemical formula for acetic acid?
+Who was the first person to invent the airplane?
+What is the capital of Norway?
+What is the largest ice sheet in the world?
+What is the chemical symbol for silicon?
+What is the largest archipelago in the world?
+Who wrote the book 'The Chronicles of Narnia'?
+What is the capital of Finland?
+What is the most common type of bird in the world?
+What is the chemical formula for carbonic acid?
+Who was the first person to invent the printing press?
+What is the capital of Denmark?
+What is the largest bay in the world?
+What is the chemical symbol for chlorine?
+What is the largest peninsula in the world?
+Who wrote the book 'The Hitchhiker's Guide to the Galaxy'?
+What is the capital of Poland?
+What is the most common type of fish in the world?
+What is the chemical formula for hydrofluoric acid?
+Who was the first person to invent the telephone?
+What is the capital of Belgium?
+What is the largest gulf in the world?
+What is the chemical symbol for sulfur?
+What is the largest strait in the world?
+Who wrote the book 'Fahrenheit 451'?
+What is the capital of Austria?
+What is the most common type of insect in the world?
+What is the chemical formula for hydrobromic acid?
+Who was the first person to invent the radio?
+What is the capital of Switzerland?
+What is the largest sea in the world?
+What is the chemical symbol for nitrogen?
+What is the largest sound in the world?
+Who wrote the book 'Brave New World'?
+What is the capital of Portugal?
+What is the most common type of mammal in the world?
+What is the chemical formula for hydroiodic acid?
+Who was the first person to invent the television?
+What is the capital of Ireland?
+What is the largest ocean in the world?
+What is the chemical symbol for oxygen?
+What is the largest river in the world?
+Who wrote the book 'The Handmaid's Tale'?
+What is the capital of New Zealand?
+What is the most common type of reptile in the world?
+What is the chemical formula for perchloric acid?
+Who was the first person to invent the computer?
+What is the capital of the Czech Republic?
+What is the largest desert in the world?
+What is the chemical symbol for fluorine?
+What is the largest island in the world?
+Who wrote the book 'The Road'?
+What is the capital of Hungary?
+What is the most common type of amphibian in the world?
+What is the chemical formula for chloric acid?
+Who was the first person to invent the internet?
+What is the capital of Romania?
+What is the largest mountain range in the world?
+What is the chemical symbol for bromine?
+What is the largest volcano in the world?
+Who wrote the book 'The Stand'?
+What is the capital of Bulgaria?
+What is the most common type of crustacean in the world?
+What is the chemical formula for bromic acid?
+Who was the first person to invent the car?
+What is the capital of Croatia?
+What is the largest forest in the world?
+What is the chemical symbol for iodine?
+What is the largest reef in the world?
+Who wrote the book 'It'?
+What is the capital of Serbia?
+What is the most common type of mollusk in the world?
+What is the chemical formula for iodic acid?
+Who was the first person to invent the motorcycle?
+What is the capital of Slovakia?
+What is the largest jungle in the world?
+What is the chemical symbol for astatine?
+What is the largest swamp in the world?
+Who wrote the book 'The Shining'?
+What is the capital of Slovenia?
+What is the most common type of arachnid in the world?
+What is the chemical formula for periodic acid?
+Who was the first person to invent the bicycle?
+What is the capital of Bosnia and Herzegovina?
+What is the largest grassland in the world?
+What is the chemical symbol for tennessine?
+What is the largest savanna in the world?
+Who wrote the book 'Misery'?
+What is the capital of Montenegro?
+What is the most common type of myriapod in the world?
+What is the chemical formula for hypochlorous acid?
+Who was the first person to invent the submarine?
+What is the capital of North Macedonia?
+What is the largest tundra in the world?
+What is the chemical symbol for livermorium?
+What is the largest taiga in the world?
+Who wrote the book 'Carrie'?
+What is the capital of Albania?
+What is the most common type of echinoderm in the world?
+What is the chemical formula for chlorous acid?
+Who was the first person to invent the helicopter?
+What is the capital of Kosovo?
+What is the largest steppe in the world?
+What is the chemical symbol for moscovium?
+What is the largest prairie in the world?
+Who wrote the book 'The Dark Tower'?
+What is the capital of Moldova?
+What is the most common type of cnidarian in the world?
+What is the chemical formula for hypobromous acid?
+Who was the first person to invent the rocket?
+What is the capital of Belarus?
+What is the largest wetland in the world?
+What is the chemical symbol for nihonium?
+What is the largest salt flat in the world?
+Who wrote the book 'The Green Mile'?
+What is the capital of Ukraine?
+What is the most common type of sponge in the world?
+What is the chemical formula for bromous acid?
+Who was the first person to invent the satellite?
+What is the capital of Latvia?
+What is the largest delta in the world?
+What is the chemical symbol for flerovium?
+What is the largest estuary in the world?
+Who wrote the book 'The Talisman'?
+What is the capital of Lithuania?
+What is the most common type of platyhelminth in the world?
+What is the chemical formula for hypoiodous acid?
+Who was the first person to invent the telescope?
+What is the capital of Estonia?
+What is the largest fjord in the world?
+What is the chemical symbol for oganesson?
+What is the largest lagoon in the world?
+Who wrote the book 'Black House'?
+What is the capital of Georgia?
+What is the most common type of nematode in the world?
+What is the chemical formula for iodous acid?
+Who was the first person to invent the microscope?
+What is the capital of Armenia?
+What is the largest canyon in the world?
+What is the chemical symbol for tennessine?
+What is the largest cave in the world?
+Who wrote the book 'The Tommyknockers'?
+What is the capital of Azerbaijan?
+What is the most common type of annelid in the world?
+What is the chemical formula for perbromic acid?
+Who was the first person to invent the compass?
+What is the capital of Kazakhstan?
+What is the largest archipelago in the world?
+What is the chemical symbol for livermorium?
+What is the largest peninsula in the world?
+Who wrote the book 'Insomnia'?
+What is the capital of Uzbekistan?
+What is the most common type of arthropod in the world?
+What is the chemical formula for perchloric acid?
+Who was the first person to invent the gunpowder?
+What is the capital of Turkmenistan?
+What is the largest bay in the world?
+What is the chemical symbol for moscovium?
+What is the largest gulf in the world?
+Who wrote the book 'Rose Madder'?
+What is the capital of Kyrgyzstan?
+What is the most common type of chordate in the world?
+What is the chemical formula for periodic acid?
+Who was the first person to invent the paper?
+What is the capital of Tajikistan?
+What is the largest sea in the world?
+What is the chemical symbol for nihonium?
+What is the largest sound in the world?
+Who wrote the book 'Desperation'?
+What is the capital of Afghanistan?
+What is the most common type of hemichordate in the world?
+What is the chemical formula for hypochlorous acid?
+Who was the first person to invent the wheel?
+What is the capital of Pakistan?
+What is the largest strait in the world?
+What is the chemical symbol for flerovium?
+What is the largest waterfall in the world?
+Who wrote the book 'The Regulators'?
+What is the capital of Iran?
+What is the most common type of urochordate in the world?
+What is the chemical formula for chlorous acid?
+Who was the first person to invent the agriculture?
+What is the capital of Iraq?
+What is the largest glacier in the world?
+What is the chemical symbol for oganesson?
+What is the largest ice sheet in the world?
+Who wrote the book 'Bag of Bones'?
+What is the capital of Saudi Arabia?
+What is the most common type of cephalochordate in the world?
+What is the chemical formula for hypobromous acid?
+Who was the first person to invent the writing?
+What is the capital of Yemen?
+What is the largest ice shelf in the world?
+What is the chemical symbol for tennessine?
+What is the largest ice cap in the world?
+Who wrote the book 'The Girl Who Loved Tom Gordon'?
+What is the capital of Oman?
+What is the most common type of craniate in the world?
+What is the chemical formula for bromous acid?
+Who was the first person to invent the fire?
+What is the capital of the United Arab Emirates?
+What is the largest ice field in the world?
+What is the chemical symbol for livermorium?
+What is the largest ice stream in the world?
+Who wrote the book 'Dreamcatcher'?
+What is the capital of Qatar?
+What is the most common type of vertebrate in the world?
+What is the chemical formula for hypoiodous acid?
+Who was the first person to invent the language?
+What is the capital of Bahrain?
+What is the largest ice rise in the world?
+What is the chemical symbol for moscovium?
+What is the largest ice tongue in the world?
+Who wrote the book 'From a Buick 8'?
+What is the capital of Kuwait?
+What is the most common type of gnathostome in the world?
+What is the chemical formula for iodous acid?
+Who was the first person to invent the music?
+What is the capital of Jordan?
+What is the largest ice pier in the world?
+What is the chemical symbol for nihonium?
+What is the largest ice wall in the world?
+Who wrote the book 'The Dark Half'?
+What is the capital of Lebanon?
+What is the most common type of fish in the world?
+What is the chemical formula for perbromic acid?
+Who was the first person to invent the art?
+What is the capital of Syria?
+What is the largest ice road in the world?
+What is the chemical symbol for flerovium?
+What is the largest ice bridge in the world?
+Who wrote the book 'Needful Things'?
+What is the capital of Israel?
+What is the most common type of tetrapod in the world?
+What is the chemical formula for perchloric acid?
+Who was the first person to invent the religion?
+What is the capital of Palestine?
+What is the largest ice cave in the world?
+What is the chemical symbol for oganesson?
+What is the largest ice hotel in the world?
+Who wrote the book 'Gerald's Game'?
+What is the capital of Cyprus?
+What is the most common type of amniote in the world?
+What is the chemical formula for periodic acid?
+Who was the first person to invent the philosophy?
+What is the capital of Malta?
+What is the largest ice sculpture in the world?
+What is the chemical symbol for tennessine?
+What is the largest ice palace in the world?
+Who wrote the book 'Dolores Claiborne'?
+What is the capital of Vatican City?
+What is the most common type of mammal in the world?
+What is the chemical formula for hypochlorous acid?
+Who was the first person to invent the science?
+What is the capital of San Marino?
+What is the largest ice maze in the world?
+What is the chemical symbol for livermorium?
+What is the largest ice bar in the world?
+Who wrote the book 'The Waste Lands'?
+What is the capital of Monaco?
+What is the most common type of bird in the world?
+What is the chemical formula for chlorous acid?
+Who was the first person to invent the mathematics?
+What is the capital of Liechtenstein?
+What is the largest ice rink in the world?
+What is the chemical symbol for moscovium?
+What is the largest ice slide in the world?
+Who wrote the book 'Wizard and Glass'?
+What is the capital of Andorra?
+What is the most common type of reptile in the world?
+What is the chemical formula for hypobromous acid?
+Who was the first person to invent the history?
+What is the capital of Luxembourg?
+What is the largest ice castle in the world?
+What is the chemical symbol for nihonium?
+What is the largest ice fort in the world?
+Who wrote the book 'Wolves of the Calla'?
+What is the capital of Iceland?
+What is the most common type of amphibian in the world?
+What is the chemical formula for bromous acid?
+Who was the first person to invent the geography?
+What is the capital of Greenland?
+What is the largest ice dome in the world?
+What is the chemical symbol for flerovium?
+What is the largest ice spire in the world?
+Who wrote the book 'Song of Susannah'?
+What is the capital of the Faroe Islands?
+What is the most common type of fish in the world?
+What is the chemical formula for hypoiodous acid?
+Who was the first person to invent the astronomy?
+What is the capital of the Aland Islands?
+What is the largest ice tower in the world?
+What is the chemical symbol for oganesson?
+What is the largest ice arch in the world?
+Who wrote the book 'The Dark Tower'?
+What is the capital of Svalbard and Jan Mayen?
+What is the most common type of insect in the world?
+What is the chemical formula for iodous acid?
+Who was the first person to invent the physics?
+What is the capital of Saint Pierre and Miquelon?
+What is the largest ice bridge in the world?
+What is the chemical symbol for tennessine?
+What is the largest ice tunnel in the world?
+Who wrote the book 'The Wind Through the Keyhole'?
+What is the capital of Bermuda?
+What is the most common type of crustacean in the world?
+What is the chemical formula for perbromic acid?
+Who was the first person to invent the chemistry?
+What is the capital of Gibraltar?
+What is the largest ice wall in the world?
+What is the chemical symbol for livermorium?
+What is the largest ice road in the world?
+Who wrote the book 'Doctor Sleep'?
+What is the capital of the Isle of Man?
+What is the most common type of mollusk in the world?
+What is the chemical formula for perchloric acid?
+Who was the first person to invent the biology?
+What is the capital of Guernsey?
+What is the largest ice hotel in the world?
+What is the chemical symbol for moscovium?
+What is the largest ice cave in the world?
+Who wrote the book 'Mr. Mercedes'?
+What is the capital of Jersey?
+What is the most common type of arachnid in the world?
+What is the chemical formula for periodic acid?
+Who was the first person to invent the geology?
+What is the capital of Anguilla?
+What is the largest ice palace in the world?
+What is the chemical symbol for nihonium?
+What is the largest ice sculpture in the world?
+Who wrote the book 'Finders Keepers'?
+What is the capital of the British Virgin Islands?
+What is the most common type of myriapod in the world?
+What is the chemical formula for hypochlorous acid?
+Who was the first person to invent the ecology?
+What is the capital of the Cayman Islands?
+What is the largest ice bar in the world?
+What is the chemical symbol for flerovium?
+What is the largest ice maze in the world?
+Who wrote the book 'End of Watch'?
+What is the capital of Montserrat?
+What is the most common type of echinoderm in the world?
+What is the chemical formula for chlorous acid?
+Who was the first person to invent the paleontology?
+What is the capital of the Turks and Caicos Islands?
+What is the largest ice slide in the world?
+What is the chemical symbol for oganesson?
+What is the largest ice rink in the world?
+Who wrote the book 'The Outsider'?
+What is the capital of Saint Helena, Ascension and Tristan da Cunha?
+What is the most common type of cnidarian in the world?
+What is the chemical formula for hypobromous acid?
+Who was the first person to invent the archaeology?
+What is the capital of the Falkland Islands?
+What is the largest ice fort in the world?
+What is the chemical symbol for tennessine?
+What is the largest ice castle in the world?
+Who wrote the book 'Elevation'?
+What is the capital of South Georgia and the South Sandwich Islands?
+What is the most common type of sponge in the world?
+What is the chemical formula for bromous acid?
+Who was the first person to invent the anthropology?
+What is the capital of the British Indian Ocean Territory?
+What is the largest ice spire in the world?
+What is the chemical symbol for livermorium?
+What is the largest ice dome in the world?
+Who wrote the book 'The Institute'?
+What is the capital of Pitcairn Islands?
+What is the most common type of platyhelminth in the world?
+What is the chemical formula for hypoiodous acid?
+Who was the first person to invent the sociology?
+What is the capital of the Cook Islands?
+What is the largest ice arch in the world?
+What is the chemical symbol for moscovium?
+What is the largest ice tower in the world?
+Who wrote the book 'If It Bleeds'?
+What is the capital of Niue?
+What is the most common type of nematode in the world?
+What is the chemical formula for iodous acid?
+Who was the first person to invent the psychology?
+What is the capital of Tokelau?
+What is the largest ice tunnel in the world?
+What is the chemical symbol for nihonium?
+What is the largest ice bridge in the world?
+Who wrote the book 'Later'?
+What is the capital of American Samoa?
+What is the most common type of annelid in the world?
+What is the chemical formula for perbromic acid?
+Who was the first person to invent the economics?
+What is the capital of Guam?
+What is the largest ice road in the world?
+What is the chemical symbol for flerovium?
+What is the largest ice wall in the world?
+Who wrote the book 'Billy Summers'?
+What is the capital of the Northern Mariana Islands?
+What is the most common type of arthropod in the world?
+What is the chemical formula for perchloric acid?
+Who was the first person to invent the political science?
+What is the capital of Puerto Rico?
+What is the largest ice hotel in the world?
+What is the chemical symbol for oganesson?
+What is the largest ice cave in the world?
+Who wrote the book 'Fairy Tale'?
+What is the capital of the United States Virgin Islands?
+What is the most common type of chordate in the world?
+What is the chemical formula for periodic acid?
+Who was the first person to invent the law?

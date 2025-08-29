@@ -1,0 +1,367 @@
+after setting up all the things install pip install requirements.txt and run 
+
+python main.py 
+
+and then in the new terminal run any query like
+
+python client/client.py query --user user1 --password pass123 --query " why lattice of unknown symbols pulsed on the screen?"
+
+then we have to configure aws 
+
+but before that you have to create a user in "IAM"
+
+Go to IAM in AWS Console
+Click "Users" → "Create user"
+Enter a username (e.g., "rag-admin")
+
+Check "Provide user access to the AWS Management Console"
+Choose "I want to create an IAM user"
+Click "Next"
+
+Attach policies:
+AdministratorAccess (for full access)
+Or create custom policies for ECS, ECR, EFS, etc.
+Click "Create user"
+
+create Access Keys:
+Click on your new user
+Go to "Security credentials" tab
+Click "Create access key"
+Choose "Command Line Interface (CLI)"
+Copy the Access Key ID and Secret Access Key
+
+
+then
+write "aws configure" in the terminal and enter
+
+Enter your credentials for ap-south-1:
+AWS Access Key ID: Your access key
+AWS Secret Access Key: Your secret key
+Default region name: ap-south-1
+Default output format: json
+
+verify confiuration  
+
+"aws sts get-caller-identity"
+
+run this command in terminal to check 
+
+This should show your account ID and confirm you're authenticated.```
+
+then we have to create a ecr repository
+
+1.1 Go to ECR:
+
+Open AWS Console: https://console.aws.amazon.com/
+
+Make sure you're in ap-south-1 (Mumbai) region (check top-right corner)
+
+Search for "ECR" in the search bar
+Click "Elastic Container Registry"
+1.2 Create Repository:
+Click "Create repository" button
+Repository name: Enter rag-agent-repo
+Leave all other settings as default
+Scroll down and click "Create repository"`
+
+  NEXT "Create VPC"
+
+   Navigate to VPC Console:
+Open AWS Console: https://console.aws.amazon.com/
+Make sure you're in ap-south-1 (Mumbai) - Check top-right corner
+Search for "VPC" in the search bar
+Click "VPC" (Virtual Private Cloud)
+
+Start VPC Creation:
+Click "Create VPC" button
+On the "Create VPC" page, make sure you select "VPC and more" from the resource options on the left
+
+Configure VPC Settings:
+Name tag auto-generation: Enter rag-app-vpc
+IPv4 CIDR block: Leave as default 10.0.0.0/16
+IPv6 CIDR block: Leave as "No IPv6 CIDR block"
+Tenancy: Leave as "Default"
+
+Configure Subnets:
+Number of Availability Zones (AZs): Select 2
+Number of public subnets: Set to 2 (one for each AZ)
+Number of private subnets: Set to 2 (one for each AZ)
+Customize subnets: Leave unchecked
+
+Configure NAT Gateways:
+NAT gateways: Select "None" (to save costs)
+VPC endpoints: Leave as "None"
+
+check both boxes enable DNS HOSTNAMES
+
+and DNS resolution
+
+ Review and Create:
+`Review the summary - you should see:
+VPC: rag-app-vpc
+AZs: 2
+Public Subnets: 2
+Private Subnets: 2
+NAT Gateways: None
+Click "Create VPC"
+
+vpc id = vpc-05d9bb93107b38489 for example make sure to select your own
+
+
+Create EFS File System
+4.1 Navigate to EFS Console:
+In AWS Console, search for "EFS" in the search bar
+Click on "Elastic File System"
+Make sure you're still iin your region
+4.2 Create File System:
+Click "Create file system" button
+A dialog will pop up
+4.3 Configure File System:
+Name: Enter rag-app-efs
+VPC: Select your VPC (the one you just created - rag-app-vpc)
+Availability and durability: Leave as default
+Click "Create"
+
+the file system id will look like this(fs-09f182c45265a55f3.efs.ap-south-1.amazonaws.com)
+
+Configure Network Access (Mount Targets):
+Click the "Network" tab
+You'll see your 2 Availability Zones listed
+Click "Create mount targets" button
+
+Create Mount Targets:
+VPC: Should be pre-selected (your rag-app-vpc)
+For each AZ, select:
+Subnet: Choose one of the private subnets for each AZ
+Security group: We'll create a new one
+
+Go to Security Groups:
+In AWS Console, search for "Security Groups"
+Click on "Security Groups"
+Create New Security Group:
+Click "Create security group"
+Security group name: efs-security-group
+Description: Allows NFS access for EFS
+VPC: Select your rag-app-vpc
+Inbound rules: Click "Add rule"
+Type: Select "NFS" from dropdown
+Source: Enter 10.0.0.0/16
+Description: NFS access from VPC
+
+Click "Create security group"
+Step 2: Update Mount Targets
+Go back to EFS:
+Go back to your EFS file system
+Click the "Network" tab
+You should see your 2 mount targets
+
+Update Security Groups:
+Click on the Security Group ID for the first mount target
+It will take you to the mount target details
+Look for an "Edit" or "Modify" button
+Change the security group from default to your new efs-security-group
+Do the same for the second mount target
+
+
+Create EC2 Launch Template
+5.1 Navigate to EC2 Console:
+In AWS Console, search for "EC2"
+Click on "EC2"
+5.2 Go to Launch Templates:
+In the left sidebar, scroll down to "Instances"
+Click "Launch Templates"
+Click "Create launch template"
+
+Configure Launch Template:
+Launch template name: rag-app-launch-template
+Template version description: RAG application launch template
+Auto Scaling guidance: Check "Provide guidance to help me set up a template for use with Auto Scaling"
+5.4 Configure Instance:
+Application and OS Images: Select "Quick Start" → "Amazon Linux 2"
+Instance type: Select "t3.medium" (2 vCPU, 4 GB RAM)
+Key pair name: "Create new key pair" → Name it rag-app-key
+
+Configure Storage:
+Root volume:
+Size: 20 GB (for your 4.3GB Docker image)
+Volume type: gp3
+Click "Add new volume"
+Volume type: "EFS"
+File system ID: Select your EFS file system
+Mount point: /mnt/efs
+5.6 Configure Security:
+Security groups: Click "Create security group"
+Security group name: rag-app-sg
+Description: Allows HTTP access for RAG app
+Inbound rules: Click "Add rule"
+Type: "HTTP"
+Source: "Anywhere" (0.0.0.0/0)
+Description: HTTP access for web app
+
+
+after creating security group go in the advanced detail and find the user data and copy paste this whole data
+
+#!/bin/bash
+yum update -y
+yum install -y docker
+systemctl start docker
+systemctl enable docker
+usermod -a -G docker ec2-user
+
+# Install EFS utilities
+yum install -y amazon-efs-utils
+
+# Create mount point
+mkdir -p /mnt/efs
+
+# Mount EFS (replace fs-xxxxxxxxx with your actual EFS file system ID)
+mount -t efs fs-xxxxxxxxx:/ /mnt/efs
+
+# Add to fstab for persistence
+echo "fs-xxxxxxxxx:/ /mnt/efs efs defaults,_netdev 0 0" >> /etc/fstab
+
+# Login to ECR
+aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 341098452117.dkr.ecr.ap-south-1.amazonaws.com
+
+# Pull your Docker image
+docker pull 341098452117.dkr.ecr.ap-south-1.amazonaws.com/rag-agent-repo:latest
+
+# Create application directory
+mkdir -p /mnt/efs/chroma_db
+mkdir -p /mnt/efs/documents
+mkdir -p /mnt/efs/documents/shared
+mkdir -p /mnt/efs/documents/users
+
+# Start your RAG application
+docker run -d \
+  --name rag-app \
+  -p 8000:8000 \
+  -v /mnt/efs:/app/efs \
+  -e OPENAI_API_KEY=your-openai-key-here \
+  341098452117.dkr.ecr.ap-south-1.amazonaws.com/rag-agent-repo:latest
+
+  make sure you have change you file system id
+
+
+
+Go to ECS Console:
+AWS Console → Search for "ECS"
+Click "Elastic Container Service"
+Create Cluster:
+Click "Create cluster"
+Cluster name: rag-app-cluster
+Leave everything else as default
+Click "Create"
+
+ Create Task Definition
+2.1 Configure Task Definition:
+Task definition family: rag-app-task
+Launch type: AWS Fargate
+Operating system/Architecture: Linux/x86_64
+Task size:
+CPU: 1 vCPU
+Memory: 4 GB
+Task role: Leave as None
+Task execution role: Select ecsTaskExecutionRole (or let AWS create one)
+Click "Next"
+2.2 Define Container:
+Click "Add container"
+Container name: rag-app-container
+Image URI: 341098452117.dkr.ecr.ap-south-1.amazonaws.com/rag-agent-repo:latest
+Port mappings: Click "Add port mapping"
+Container port: 8000
+App protocol: HTTP
+
+Click "Add"
+2.3 Add EFS Volume:
+Scroll down to "Volumes" section
+Click "Add volume"
+Name: chroma-storage
+Volume type: EFS
+File system ID: Select your EFS file system
+Root directory: Leave as /
+Click "Add"
+2.4 Mount Volume in Container:
+Go back to your container configuration
+Storage and logging → Mount points
+Click "Add mount point"
+Source volume: chroma-storage
+
+Container path: /app/efs
+Click "Update"
+
+
+ Go to Your Cluster:
+ECS Console → Click on your rag-app-cluster
+Click "Create" button
+Select "Service"
+3.2 Configure Service:
+Launch type: Fargate
+Task definition:
+Family: Select your rag-app-task
+Revision: Latest
+Service name: rag-agent-task-service
+Desired tasks: 1
+Click "Next"
+Configure Networking:
+VPC: Select your rag-app-vpc
+Subnets: Select both public subnets:
+rag-agent-subnet-public1-ap-south-1a
+rag-agent-subnet-public2-ap-south-1b
+Security group: Click "Create a new security group"
+Security group name: rag-app-fargate-sg
+Description: Allows HTTP for RAG app
+Inbound rules: Click "Add rule"
+Type: tcp custom
+Port: 8000
+Source: Anywhere (0.0.0.0/0)
+
+and optional click again add rule 
+type: HTTP
+port 80
+source Anywhere
+
+Public IP: Turn ON (very important!)
+Click "Next"
+
+ Set OpenAI API Key
+Step 1: Add Environment Variable to Task Definition
+ECS Console → Task Definitions
+Click on your rag-app-task
+Click "Create new revision"
+Container definition → Click on your container
+Environment variables → Click "Add environment variable"
+Key: OPENAI_API_KEY
+Value: Your actual OpenAI API key (starts with sk-...)
+Click "Update"
+Click "Create"
+
+then you have to go back to you cluster then service and then on the task tab and see the status running
+
+
+click on the service and get you public id copy it paste it on client.py(10th line)
+
+and go to browser and write http://your_public_id:8000/docs it will take you to the swagger ui thats it
+
+after running the fast api make sure to upload you pdf again with these command 
+
+python client/client.py user-add --admin-user admin --admin-pass admin --new-user user1 --new-pass pass123
+
+python client/client.py upload --user admin --password admin --file "test_data/PDF4_AnnualReport.pdf"
+
+python client/client.py upload --user admin --password admin --file "test_data/PDF4_AnnualReport.pdf"
+
+python client/client.py upload --user admin --password admin --file "test_data/PDF5_PostApocalyptic.pdf"
+
+python client/client.py upload --user admin --password admin --file "test_data/PDF6_ScienceFiction.pdf"
+
+python client/client.py upload --user admin --password admin --file "test_data/PDF8_BotanicalResearch.pdf"
+
+python client/client.py query --user user1 --password pass123 --query "why lattice of unknown symbols pulsed on the screen?"
+
+python client/client.py load-test --admin-user admin --admin-pass admin --threads 50 --questions test_data/questions.txt`
+
+
+Remove-Item -Recurse -Force .\efs\chroma_db
+
+python client/client.py load-test --admin-user admin --admin-pass admin --threads 1 --questions test_data/questions.txt
